@@ -11,8 +11,8 @@ Metadata Model Guide
 --------------------
 .. raw:: html
 
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe width=100% height=100% src="https://www.youtube.com/embed/p2-mE45Ezyk" title="ENA: an introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div style="position: relative; overflow: hidden; max-width: 100%; height: 350;">
+        <iframe width=100% height=350 src="https://www.youtube.com/embed/p2-mE45Ezyk" title="ENA: an introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
 Submitting a Study
