@@ -17,7 +17,7 @@ This model is used, not only for SARS-CoV-2 data, but data from across the tree 
 short video, I will touch on the importance of each element of the model and what data/metadata each
 object holds.
 
-.. raw:: html
+.. raw :: html
 
     <div style="position: relative; overflow: hidden; max-width: 100%; height: 350;">
         <iframe width=100% height=350 src="https://www.youtube.com/embed/p2-mE45Ezyk" title="ENA: an introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -35,9 +35,39 @@ Workshop Setup
 --------------
 Before we begin, please download the example data `here <###TODO####>`_ and unzip it.
 
-For this tutorial, you will need a means to edit spreadsheets in Microsoft Excel format 
-and a text editor, ideally something with syntax highlighting for XML formatted files.
+For this tutorial, you will need:
+* a means to view/edit spreadsheets in Microsoft Excel format and a text editor,
+ideally something with syntax highlighting for XML formatted files.
+* a command line utility with `cURL <https://curl.se/>`_ installed.
+* a Webin account. If you don't already have one, please register `here <https://www.ebi.ac.uk/ena/submit/webin/accountInfo>`_.
+
+.. note ::
+    We will use the test servers for this workshop. These service URLs begin with `wwwdev`
+    instead of `www`. Submissions to this service are removed nightly. 
 
 Registering a Study
 ===================
-Let's start by registering a study. There are
+Let's start by registering a study. There are 2 ways to do so: interactively through our 
+`Webin Submission Portal <https://wwwdev.ebi.ac.uk/ena/submit/webin/login>`_, or programmatically
+using cURL.
+
+Interactive
+-----------
+
+Head over to the `Webin Submission Portal <https://wwwdev.ebi.ac.uk/ena/submit/webin/login>`_
+and log in using your Webin credentials to access the landing page.  Here, menus are color-coded
+in line with the metadata model. Study-related items are in yellow. Click on the 'Register Study'
+button.
+
+.. image :: ../images/wsp_landing.register_study.png
+
+Fill out info here:
+
+.. image :: ../images/wsp.register_study.png
+
+.. image :: ../images/wsp_accessions.register_study.png
+
+You're done!
+
+Programmatic
+------------
