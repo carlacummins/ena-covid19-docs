@@ -9,6 +9,7 @@ Welcome to the documentation for the European Nucleotide Archive (ENA) COVID-19 
    :maxdepth: 1
 
    help_and_guides/submission-tutorial
+   help_and_guides/submissions-tutorial-markdown
    help_and_guides/sars-cov-2-submissions
    help_and_guides/Webin-Cli_SARS-CoV-2_Genome_Submission_REST_API
 
