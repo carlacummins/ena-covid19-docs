@@ -83,7 +83,7 @@ we will need 2 XML files:
 Examples of both of these files are available in the example materials unzipped earlier :ref:`workshop-setup-anchor`.
 Navigate to the `example_data/study/programmatic` directory to find the example files:
 
-.. code-block :: bash
+.. code-block :: console
     export WORKSHOP=/path/to/example_data/
     cd $WORKSHOP/study/programmatic/
     ls
@@ -93,7 +93,7 @@ As covered in the video on our metadata model, aliases are an important way to i
 link your data. Please edit `project.xml` to create a project alias that is unique to you.
 Once complete, you are ready to send both XMLs to our test service using cURL:
 
-.. code-block :: bash
+.. code-block :: console
     curl -u username:password -F "SUBMISSION=@submission.xml" -F "PROJECT=@project.xml" "https://wwwdev.ebi.ac.uk/ena/submit/drop-box/submit/"
 
 .. note ::
@@ -117,7 +117,7 @@ Sample video, introduction to ERC000033 checklist, mandatory metadata, INSDC mis
 Overview of our 3 samples 
 
 
-.. code-block :: xml
+.. code-block :: XML
     <?xml version="1.0" encoding="UTF-8"?>
     <?xml-stylesheet type="text/xsl" href="receipt.xsl"?>
     <RECEIPT receiptDate="2021-09-29T16:58:08.634+01:00" submissionFile="submission.xml" success="true">
