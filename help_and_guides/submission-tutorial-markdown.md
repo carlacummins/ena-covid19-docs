@@ -26,9 +26,10 @@ object holds.
 * interactive: most suitable for infrequent submission, or those more comfortable with spreadsheets
 * drag-and-drop uploader: most suitable for once-off submission
 
-!!! note
-    We will use the test servers for this workshop. These service URLs begin with `wwwdev`
-    instead of `www`. Submissions to this service are removed nightly. 
+:::{note}
+We will use the test servers for this workshop. These service URLs begin with `wwwdev`
+instead of `www`. Submissions to this service are removed nightly. 
+:::
 
 ### Workshop Setup
 
@@ -87,13 +88,14 @@ Once complete, you are ready to send both XMLs to our test service using cURL:
 curl -u username:password -F "SUBMISSION=@submission.xml" -F "PROJECT=@project.xml" "https://wwwdev.ebi.ac.uk/ena/submit/drop-box/submit/"
 ```
 
-!!! note
-    The `submission.xml` file used here defines the `<ADD/>` action. This means that we are requesting
-    a _new_ project.
-    
-    Other actions include `<MODIFY/>` to submit changes to existing objects, or `<HOLD/>` to define
-    when your data should become public. For more information, see 
-    [our submission XML documentation](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/programmatic.html#submission-xml).
+:::{note}
+The `submission.xml` file used here defines the `<ADD/>` action. This means that we are requesting
+a _new_ project.
+
+Other actions include `<MODIFY/>` to submit changes to existing objects, or `<HOLD/>` to define
+when your data should become public. For more information, see 
+[our submission XML documentation](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/programmatic.html#submission-xml).
+:::
 
 After running the above command, you will recieve a reply in the form of a 'receipt XML'. This 
 will contain information about the contents and success of your submission, as well as your study accession.
