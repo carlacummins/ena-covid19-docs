@@ -22,9 +22,9 @@ object holds.
 
 ### Submission Routes
 
-- programmatic: most suitable for high-throughput, frequent submissions and automated systems
-- interactive: most suitable for infrequent submission, or those more comfortable with spreadsheets
-- drag-and-drop uploader: most suitable for once-off submission
+1. programmatic: most suitable for high-throughput, frequent submissions and automated systems
+2. interactive: most suitable for infrequent submission, or those more comfortable with spreadsheets
+3. drag-and-drop uploader: most suitable for once-off submission
 
 ```{note}
 We will use the test servers for this workshop. These service URLs begin with `wwwdev`
@@ -37,11 +37,11 @@ Before we begin, please download the example data [here](###TODO####) and unzip 
 
 For this tutorial, you will need:
 
-- a means to view/edit spreadsheets in Microsoft Excel format and a text editor,
+* a means to view/edit spreadsheets in Microsoft Excel format and a text editor,
 ideally something with syntax highlighting for XML formatted files.
-- a command line utility with [cURL](https://curl.se/) installed.
-- basic command line skills.
-- a Webin account. If you don't already have one, please register [here](https://www.ebi.ac.uk/ena/submit/webin/accountInfo).
+* a command line utility with [cURL](https://curl.se/) installed.
+* basic command line skills.
+* a Webin account. If you don't already have one, please register [here](https://www.ebi.ac.uk/ena/submit/webin/accountInfo).
 
 
 ## Registering a Study
