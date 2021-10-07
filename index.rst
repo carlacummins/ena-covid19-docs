@@ -11,6 +11,7 @@ Welcome to the documentation for the European Nucleotide Archive (ENA) COVID-19 
    help_and_guides/sars-cov-2-submissions
    help_and_guides/Webin-Cli_SARS-CoV-2_Genome_Submission_REST_API
 
+.. toctree::
    :caption: SARS-CoV-2 Submission Workshop
    :maxdepth: 1
 
