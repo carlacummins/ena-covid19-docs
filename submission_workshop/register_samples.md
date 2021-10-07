@@ -1,4 +1,4 @@
-# SARS-CoV-2 Submissions Workshop Markdown
+# SARS-CoV-2 Submissions Workshop
 
 ## Introduction
 
@@ -118,7 +118,6 @@ For more general information on programmatic study registration, please see [our
 ### Interactive
 
 For this, we will use the materials in the `samples/interactive/` folder of the example data. Here, we have the same spreadsheet in 2 different formats : 
-
 - `sample_spreadsheet.xlsx` : this is in Excel format and has been annotated with colour-coding to highlight important features
 - `sample_spreadsheet.tsv` : tab-separated version of the above spreadsheet - this is the format accepted by Webin 
 
@@ -135,9 +134,7 @@ Here, we will use the materials in the `samples/programmatic` folder of the exam
 - `submission_modify.xml` : this submission XML defines the `<MODIFY/>` action, to allow us to update existing samples.
 
 #### Samples XML 
-The samples XML format allows us to define many samples inside a `<SAMPLE_SET>` tag. Each sample (enclosed in `<SAMPLE>` tags), 
-contains:
-
+The samples XML format allows us to define many samples inside a `<SAMPLE_SET>` tag. Each sample (enclosed in `<SAMPLE>` tags), contains:
 - `<TITLE>` tags : defining the title of the sample
 - `<SAMPLE_NAME>` tags : defining the taxonomic information
 - `<DESCRIPTION>` tags : providing a description of what's been sampled and 
@@ -156,22 +153,16 @@ using cURL to perform a submission:
 curl -u username:password -F "SUBMISSION=@submission.xml" -F "SAMPLE=@samples.xml" "https://wwwdev.ebi.ac.uk/ena/submit/drop-box/submit/"
 ```
 
-Again, you should receive a receipt XML with information about submission success and accession numbers. Note that this time, you
-will receive a `<SAMPLE>` tag for each submitted sample (in this case, 3). Please take note of each sample alias and accession as
-we will use these later to submit data files against.
+Again, you should receive a receipt XML with information about submission success and accession numbers. Note that this time, you will receive a `<SAMPLE>` tag for each submitted sample (in this case, 3). Please take note of each sample alias and accession as we will use these later to submit data files against.
 
 For more general information on programmatic sample registration, please see [our documentation](https://ena-docs.readthedocs.io/en/latest/submit/samples/programmatic.html).
 
 #### Modifying a sample
-Sample metadata can be updated at a later date. This can be achieved by editing the sample XML file to update the relevant fields, 
-and resubmitting with a submission XML containing the `<MODIFY/>` action in place of `<ADD/>`.
+Sample metadata can be updated at a later date. This can be achieved by editing the sample XML file to update the relevant fields, and resubmitting with a submission XML containing the `<MODIFY/>` action in place of `<ADD/>`.
 
-First, check your submitted sample in our browser using one of your accessions in the search box: https://wwwdev.ebi.ac.uk/ena/browser/home
-
-Now, open the `samples.xml` file and update a metadata field of your choice. e.g. new collection date. Save the file.
-
-This time, we will submit with the `submission_modify.xml`, which instructs the service to update an existing sample. This uses the alias
-to detect existing samples, so it is important not to change the alias.
+1. First, check your submitted sample in our browser using one of your accessions in the search box: [https://wwwdev.ebi.ac.uk/ena/browser/home](https://wwwdev.ebi.ac.uk/ena/browser/home)
+2. Now, open the `samples.xml` file and update a metadata field of your choice. e.g. new collection date. Save the file.
+3. This time, we will submit with the `submission_modify.xml`, which instructs the service to update an existing sample. The update uses the alias to detect existing samples, so it is important not to change the alias.
 ```bash
 curl -u username:password -F "SUBMISSION=@submission_modify.xml" -F "SAMPLE=@samples.xml" "https://wwwdev.ebi.ac.uk/ena/submit/drop-box/submit/"
 ```
