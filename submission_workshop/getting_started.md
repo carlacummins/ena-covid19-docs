@@ -1,4 +1,4 @@
-# SARS-CoV-2 Submissions Workshop
+# Getting Started
 
 ## Introduction
 

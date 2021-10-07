@@ -59,6 +59,6 @@ It is very important take note of your study accession as we will use this later
 
 For more general information on programmatic study registration, please see [our documentation](https://ena-docs.readthedocs.io/en/latest/submit/study/programmatic.html).
 
-```{info}
+```{seealso} Next..
 Now we have a study to hold our data, let's move on to [registering samples](register_samples.html).
 ```
