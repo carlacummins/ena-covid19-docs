@@ -11,11 +11,11 @@ and log in using your Webin credentials to access the landing page.  Here, menus
 in line with the metadata model. Study-related items are in yellow. Click on the 'Register Study'
 button.
 
-![WSP Dashboard](../images/wsp_landing.register_study.png)
+![](../images/wsp_landing.register_study.png)
 
 Fill out info here: 
-![Register Study](../images/wsp.register_study.png)
-![Study Accessions](../images/wsp_accessions.register_study.png)
+![](../images/wsp.register_study.png)
+![](../images/wsp_accessions.register_study.png)
 
 You're done!
 
@@ -59,6 +59,6 @@ It is very important take note of your study accession as we will use this later
 
 For more general information on programmatic study registration, please see [our documentation](https://ena-docs.readthedocs.io/en/latest/submit/study/programmatic.html).
 
-```{seealso} Next..
+```{tip} 
 Now we have a study to hold our data, let's move on to [registering samples](register_samples.html).
 ```

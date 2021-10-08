@@ -20,7 +20,12 @@ In both cases, each row represents a sample and each column represents a metadat
 
 ## Programmatic
 
-Here, we will use the materials in the `samples/programmatic` folder of the example data. Here, you will find several XML files:
+In this section, we will use the materials in the `samples/programmatic` folder of the example data. Here, you will find several XML files. Navigate to the directory to see the file list:
+```bash
+cd $WORKSHOP 
+cd samples/programmatic
+ls 
+```
 
 - `samples.xml` : this contains the same set of samples as those submitted interactively in the previous section.
 - `submission.xml` : this XML is the same as that used to submit your study. It defines the `<ADD/>` action to create new samples.
