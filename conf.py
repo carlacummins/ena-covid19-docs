@@ -1,4 +1,7 @@
 extensions = ['myst_parser']
+myst_enable_extensions = [
+  "colon_fence",
+]
 
 # General information about the project.
 project = u'ENA SARS-CoV-2 Documentation'
