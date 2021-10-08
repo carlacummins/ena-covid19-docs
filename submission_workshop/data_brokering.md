@@ -27,9 +27,11 @@ Center names are free text and are not validated on the ENA side. There is no ne
 The difference between the two submission account types is most apparent in our sample display:
 
 #### Sample Display : regular account
-![](../images/sample.non-broker.png)
 [SAMEA8697319 on the ENA Browser](https://www.ebi.ac.uk/ena/browser/view/SAMEA8697319)
 
+![](../images/sample.non-broker.png)
+
 #### Sample Display : broker account
-![](../images/sample.broker.png)
 [SAMEA9079967 on the ENA Browser](https://www.ebi.ac.uk/ena/browser/view/SAMEA9079967)
+
+![](../images/sample.broker.png)
