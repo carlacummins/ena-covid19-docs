@@ -38,7 +38,7 @@ Please use the `-test` flag to submit to our test service
 java -jar webin-cli-4.2.0.jar -context reads -manifest webin-cli/paired_fastq_manifest_sample1.txt -userName user -password pass -test -submit
 ```
 
-Do this for all 3 manifest files.
+Do this for all 3 manifest files. As always, please note down the resulting run accessions (`ERR` numbers) for use later.
 
 ```{tip}
 Reads have now been submitted to your samples. Feel free to move on to [submitting sequences](submit_sequences.html) if you do not intend to use the other submission methods listed below.
@@ -78,7 +78,7 @@ Note that runs reference experiments by their aliases. E.g.
 - in `runs.xml`: `<EXPERIMENT_REF refname="SARS-CoV-2 experiment 1" />`
 
 ```{note}
-In all object linking (`<*_REF>` tags), we can link by either alias, using `refname=""` or by accession, using `accession=""`
+In all object referencing/linking (using `<*_REF>` tags), we can link by either alias, using `refname=""` or by accession, using `accession=""`
 ```
 
 As with previous programmatic submissions, we will send these XML files to our test service using cURL:
