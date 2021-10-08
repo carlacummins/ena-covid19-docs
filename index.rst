@@ -20,6 +20,7 @@ Welcome to the documentation for the European Nucleotide Archive (ENA) COVID-19 
    submission_workshop/register_samples
    submission_workshop/submit_reads
    submission_workshop/submit_sequences
+   submission_workshop/data_brokering.md
 
 .. Extra
 .. *****

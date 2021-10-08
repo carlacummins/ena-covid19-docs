@@ -2,15 +2,12 @@
 
 ## Introduction
 
-In this workshop, we will step through the available options to submit SARS-CoV-2 data to the European 
-Nucleotide Archive using example data. For a complete submissions guide, please see 
-[here](sars-cov-2-submissions.html).
+In this workshop, we will begin by stepping through the available options to submit SARS-CoV-2 data to the European 
+Nucleotide Archive using a series of example data and files we've prepared for you. For a complete submissions guide, please see [here](sars-cov-2-submissions.html).
 
 ### Metadata Model Guide
 
-Before submitting any data, it is important to understand
-the structure of our 
-[metadata model](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/metadata.html).
+Before submitting any data, it is important to understand the structure of our [metadata model](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/metadata.html).
 This model is used, not only for SARS-CoV-2 data, but data from across the tree of life. In this 
 short video, I will touch on the importance of each element of the model and what data/metadata each
 object holds.
@@ -24,7 +21,7 @@ object holds.
 
 - programmatic: most suitable for high-throughput, frequent submissions and automated systems
 - interactive: most suitable for infrequent submission, or those more comfortable with spreadsheets
-- drag-and-drop uploader: most suitable for once-off submission
+- drag-and-drop uploader: most suitable for once-off submission (not coverered in this workshop as it is not suitable for brokering. For more information, see [here](https://ebi-ait.github.io/sars-cov2-data-upload/app-documentation))
 
 ```{note}
 We will use the test servers for this workshop. These service URLs begin with `wwwdev`
