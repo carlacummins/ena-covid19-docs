@@ -35,3 +35,13 @@ The difference between the two submission account types is most apparent in our 
 [SAMEA9079967 on the ENA Browser](https://www.ebi.ac.uk/ena/browser/view/SAMEA9079967)
 
 ![](../images/sample.broker.png)
+
+
+### Authorship
+```{tip}
+Whoever owns the account (normal or broker), has the ability to add contacts to the account. This refers to other individuals who will have access to the account. 
+```
+The list of account contacts, along with the owner of the account, will be defined as ‘authors’ for assemblies, and will be converted and added to the RA lines of EMBL files. If you have a broker account, and you wish to submit assemblies, you must provide the author list within the manifest files/JSON document. If not provided, then it is automatically retrieved from the Webin account.
+
+### Location
+The address provided within the Webin account is used to populate the RL lines within EMBL files, during assembly submission. Again if you have a broker account, you can specify the address by providing this in the manifest files. If not provided, then it is automatically retrieved from the Webin account.
